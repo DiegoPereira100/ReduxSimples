@@ -8,16 +8,16 @@ function App() {
       <h1>Exercício React-Redux (Simples)</h1>
       <div className='linha'>
 
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
+      <Card title="Card 2" red>
+        X
+      </Card>
 
       </div>
-      <div className='linha2'>
+      <div className='linha'>
 
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
+      <Card title="Card 2">
+        Y
+      </Card>
 
       </div>
     </div>
