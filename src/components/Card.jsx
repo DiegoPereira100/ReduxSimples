@@ -3,9 +3,9 @@ import React from 'react'
 
 function getColor(props) {
     if (props.red) return "Red"
-    if (props.grenn) return "Green"
-    if (props.Blue) return "Blue"
-    if (props.Purple) return "Purple"
+    if (props.green) return "Green"
+    if (props.blue) return "Blue"
+    if (props.purple) return "Purple"
     return ""
 }
 
