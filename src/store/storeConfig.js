@@ -2,10 +2,18 @@ import { createStore, combineReducers } from 'redux'
 
 const reducers = combineReducers({
     numbers: function(state, action) {
-        console.log(state, ' ', action)
-        return {
-            min: 5,
-            max: 10
+       
+        switch(action.type) {
+            case 'um_min_changed':
+                return {
+                    ...state,
+                    min: action.payload
+                }
+            default:
+                return {
+                    min: 5,
+                    max: 10
+                }
         }
     },
     
