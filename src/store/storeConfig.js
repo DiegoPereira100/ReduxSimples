@@ -4,10 +4,15 @@ const reducers = combineReducers({
     numbers: function(state, action) {
        
         switch(action.type) {
-            case 'um_min_changed':
+            case 'num_min_changed':
                 return {
                     ...state,
                     min: action.payload
+                }
+            case 'num_max_changed':
+                return {
+                    ...state,
+                    max: action.payload
                 }
             default:
                 return {
